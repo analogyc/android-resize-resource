@@ -1,0 +1,19 @@
+{
+	"name": "analogyc/android-resource-resizer",
+	"description": "Simple script to help these mortals resizing their resources in Android",
+	"authors": [
+		{
+			"name": "Woxxy",
+			"email": "support@foolz.us"
+		}
+	],
+	"require": {
+		"symfony/console": "2.2.*",
+		"imagine/imagine": "v0.4.1"
+	},
+	"autoload": {
+		"psr-0": {
+			"Analogyc\\AndroidResouceResizer": "classes/"
+		}
+	}
+}
