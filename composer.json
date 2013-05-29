@@ -9,11 +9,12 @@
 	],
 	"require": {
 		"symfony/console": "2.2.*",
+		"symfony/finder": "2.2.*",
 		"imagine/imagine": "v0.4.1"
 	},
 	"autoload": {
 		"psr-0": {
-			"Analogyc\\AndroidResouceResizer": "classes/"
+			"Analogyc\\AndroidResourceResizer": "classes/"
 		}
 	}
 }

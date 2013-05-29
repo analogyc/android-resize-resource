@@ -19,7 +19,6 @@ ini_set('display_errors', 1);
 define('VENDPATH', __DIR__.'/vendor'.DIRECTORY_SEPARATOR);
 
 include VENDPATH.'autoload.php';
-include __DIR__.'/utility/Console.php';
 
 $application = new Application();
 $application->add(new \Analogyc\AndroidResourceResizer\Console());
