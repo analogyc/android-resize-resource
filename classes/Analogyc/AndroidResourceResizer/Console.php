@@ -57,14 +57,14 @@ class Console extends Command
 				null,
 				InputOption::VALUE_REQUIRED,
 				'The Android resolutions to support',
-				'ldpi|mdpi|hdpi|xhdpi|xxhdpi'
+				'ldpi|mdpi|hdpi|xhdpi|xxhdpi|xxxhdpi'
 			)
 			->addOption(
 				'base-resolution',
 				null,
 				InputOption::VALUE_REQUIRED,
 				'The highest target resolution',
-				'xxhdpi'
+				'xxxhdpi'
 			);
 	}
 
@@ -130,6 +130,7 @@ class Console extends Command
 		 * drawable-hdpi (240 dpi, High density screen) - 72px x 72px
 		 * drawable-xhdpi (320 dpi, Extra-high density screen) - 96px x 96px
 		 * drawable-xxhdpi (480 dpi, Extra-extra-high density screen) - 144px x 144px
+		 * drawable-xxxhdpi (640 dpi, Extra-extra-extra-high density screen) - 192px x 192px
 		 *
 		 * Thanks, Google. Srsly.
 		 *
@@ -138,6 +139,7 @@ class Console extends Command
 		 * 144 / 72 = 2
 		 * 144 / 96 = 1,5
 		 * 144 / 144 = your mom
+		 * 144 / 192 = 0,75
 		 */
 
 		$resolutions = array(
@@ -145,7 +147,8 @@ class Console extends Command
 			'mdpi' => 48,
 			'hdpi' => 72,
 			'xhdpi' => 96,
-			'xxhdpi' => 144
+			'xxhdpi' => 144,
+			'xxxhdpi' => 192
 		);
 
 		if (!isset($resolutions[$original_density]))
