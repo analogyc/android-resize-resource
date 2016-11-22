@@ -130,7 +130,7 @@ class Console extends Command
 		 * drawable-hdpi (240 dpi, High density screen) - 72px x 72px
 		 * drawable-xhdpi (320 dpi, Extra-high density screen) - 96px x 96px
 		 * drawable-xxhdpi (480 dpi, Extra-extra-high density screen) - 144px x 144px
-		 * drawable-xxxhdpi (640 dpi, Extra-extra-extra-high density screen) - 144px x 144px
+		 * drawable-xxxhdpi (640 dpi, Extra-extra-extra-high density screen) - 192px x 192px
 		 *
 		 * Thanks, Google. Srsly.
 		 *
@@ -139,6 +139,7 @@ class Console extends Command
 		 * 144 / 72 = 2
 		 * 144 / 96 = 1,5
 		 * 144 / 144 = your mom
+		 * 144 / 192 = 0,75
 		 */
 
 		$resolutions = array(
